@@ -1,4 +1,4 @@
-package com.example.cathay.dao.dto;
+package com.example.cathay.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +8,5 @@ import lombok.Setter;
 public class CoinDto {
     String code;
     String name;
-    float rate;
     String createTime;
 }

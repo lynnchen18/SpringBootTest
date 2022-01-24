@@ -1,4 +1,4 @@
-package com.example.cathay.dao.dto.common;
+package com.example.cathay.dto.common;
 
 
 import lombok.Getter;

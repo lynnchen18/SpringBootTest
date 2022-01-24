@@ -1,5 +1,6 @@
 package com.example.cathay.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.context.annotation.EnableMBeanExport;
@@ -16,6 +17,8 @@ public class CoinDeskResponse implements Serializable {
     private String disclaimer;
     private String chartName;
     private UpdateTime time;
+
+    @JsonIgnore
     private HashMap<String, Bpi> bpi;
 
     @Getter
@@ -27,7 +30,7 @@ public class CoinDeskResponse implements Serializable {
     }
     @Getter
     @Setter
-    public class Bpi {
+    public static class Bpi implements Serializable {
         private String code;
         private String symbol;
         private String rate;
