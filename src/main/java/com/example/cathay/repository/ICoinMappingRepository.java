@@ -5,8 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ICoinMappingRepository extends CrudRepository<Coin, Integer> {
-    Coin findByCode(String code);
+public interface ICoinMappingRepository extends CrudRepository<Coin, String> {
 
-    void deleteByCode(String code);
 }

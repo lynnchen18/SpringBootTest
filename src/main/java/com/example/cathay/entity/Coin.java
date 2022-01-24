@@ -17,9 +17,6 @@ import java.util.Date;
 public class Coin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-
-    @Column
     String code;
 
     @Column
